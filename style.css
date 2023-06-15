@@ -40,11 +40,11 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
 
     .solution{
-        width: 350px;
-        font-size: 12px;
+        width: 90vw;
+        font-size: 10px;
         letter-spacing: 1px;
         
     }
