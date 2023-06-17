@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    word-wrap: break-word;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.wrapper{
+    width: 95%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 1rem;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    width: 21rem;
+}
+
+h1{
+    color: hsl(229, 6%, 66%);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h2{
+    color: hsl(234, 12%, 34%);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+.description{
+    color:hsl(229, 6%, 66%);
+    font-weight: 200;
+}
+
+.wrapper .content{
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr;
+}
+
+.wrapper .content .card{
+    width: 20.5rem;
+    height: 15.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #000000;
+   
+}
+
+.wrapper .content .one{
+    border-top: 5px solid  hsl(180, 62%, 55%);
+}
+
+.wrapper .content .two{
+    border-top: 5px solid  hsl(0, 78%, 62%) ;
+}
+
+.wrapper .content .three{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.wrapper .content .four{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.wrapper .content .card .role{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    flex: 1;
+}
+
+.wrapper .content .card .description{
+    flex: 2;
+}
+.wrapper .content .card img{
+    flex: 2;
+    align-self: end;
+}
+
+@media (min-width: 700px){
+
+    .wrapper{
+        gap: 3em;
+        margin: 0.5em auto;
+    } 
+
+    .wrapper .content{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wrapper .content .card{
+        height: 14rem;
+        width: 19rem;
+    }
+
+    .wrapper .header{
+        width: 45ch;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    .wrapper .content{
+        height: 30rem;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 0.8fr 0.8fr 1fr;
+        gap: 1em;
+    }
+
+    .wrapper .header{
+        width: 55ch;
+    }
+
+    .wrapper .content .one{
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .wrapper .content .two{
+        grid-column: 2/3;
+        grid-row: 1 / 3;
+    }
+
+    .wrapper .content .three{
+        grid-column: 2/3;
+        grid-row: 3/ 5;
+    }
+
+    .wrapper .content .four{
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+}
+
+
+
+
+
+
+
+
