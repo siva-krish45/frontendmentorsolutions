@@ -11,12 +11,13 @@
     height: 100vh;
     background-color: blanchedalmond;
     gap: 1em;
+    margin: 0 auto;
 }
 
 .solution{
     display: flex;
     width: 500px;
-    max-width: 500px;
+    max-width: 450px;
     min-width: 200px;
     background-color: #FFFFFF;
     flex-direction: column;
