@@ -12,26 +12,28 @@
     background-color: blanchedalmond;
     gap: 1em;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .solution{
     display: flex;
-    width: 500px;
     max-width: 450px;
     min-width: 200px;
     background-color: #FFFFFF;
     flex-direction: column;
     gap: 1em;
-    border-radius: 50px;
-    height: 100px;
-    justify-content: center;
+    border-radius: 75px;
+    min-height: 150px;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 2px;
     color: #860909;
+    text-align: center
+   
 }
-
 .solution a{
     font-weight: 400;
     
@@ -41,8 +43,11 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 450px){
 
+@media (max-width: 650px){
+    .container{
+        flex-direction: column;
+    }
     .solution{
         width: 90vw;
         font-size: 10px;
