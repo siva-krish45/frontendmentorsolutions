@@ -139,10 +139,9 @@ button:last-child {
   margin-top: 50px;
 }
 
-.tools .toolscontainer  img {
+.tools .toolscontainer img {
   margin: 0 auto;
 }
-
 
 .container .companies {
   display: flex;
@@ -167,11 +166,9 @@ footer {
   text-align: center;
 }
 
-
-footer a:hover{
+footer a:hover {
   color: var(--primary_cyan) !important;
 }
-
 
 footer .logo {
   margin-top: 50px;
@@ -208,69 +205,65 @@ footer .sociallinks {
     flex: 1;
   }
 
-  .features .featurescontainer{
+  .features .featurescontainer {
     gap: 2em;
     width: 100%;
     flex-direction: row;
   }
 
-  .features .featurescontainer img{
-      flex: 1;
-      margin-left: -20%;
+  .features .featurescontainer img {
+    flex: 1;
+    margin-left: -20%;
   }
 
-  .features .featurescontainer .featureslist{
+  .features .featurescontainer .featureslist {
     flex: 2;
     text-align: left;
   }
 
-  .toolscontainer{
+  .toolscontainer {
     flex-direction: row;
-    
   }
 
-  .toolscontainer > div{
+  .toolscontainer > div {
     flex: 1;
   }
 
-  .container .companies{
+  .container .companies {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
   }
 
-  .container .companies > img{
+  .container .companies > img {
     flex: 1;
     max-width: 150px;
     height: 50px;
-    
   }
 
-  .footer{
+  .footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:50px 12.5%;
-    
+    padding: 50px 12.5%;
   }
 
-  .footer .logo{
+  .footer .logo {
     flex: 1;
     margin-top: 0;
   }
 
-  .footer .footerlinks{
+  .footer .footerlinks {
     flex-direction: row;
     flex: 3;
     flex-wrap: wrap;
     gap: 1em;
   }
 
-  .footer .sociallinks{
+  .footer .sociallinks {
     margin-bottom: 0;
     flex: 2;
     justify-content: flex-end;
   }
-
 }
