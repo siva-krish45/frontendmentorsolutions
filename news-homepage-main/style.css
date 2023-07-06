@@ -1,0 +1,146 @@
+:root{
+    --clr-background: hsl(36, 100%, 99%);
+    --clr-dark-blue: hsl(240, 100%, 5%);
+    --clr-primary-text:  hsl(236, 13%, 42%);
+    --clr-secondary-text:  hsl(233, 8%, 79%);
+    --clr-hover1 : hsl(35, 77%, 62%);
+    --clr-hover2:  hsl(5, 85%, 63%);
+    --ff-primary: 'Inter', sans-serif;
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    --fs-normal: 1rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,svg{
+    display: block;
+    max-width: 100%;
+
+}
+
+button{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+body{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-normal);
+    min-height: 100vh;
+    background-color: var(--clr-background);
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay[data-overlay="true"]{
+    background-color: hsla(236, 13%, 42%,0.2);
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.header{
+    margin-block: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .menu{
+    z-index: 999;
+    width: 2rem;
+    aspect-ratio: 1;
+    background: url("assets/images/icon-menu.svg") no-repeat center center;
+    border: none;
+}
+
+.header .menu:hover{
+    cursor: pointer;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    clip-path: rect(0,0,0,0);
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    margin: -1px;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: var(--clr-background);
+    inset: 0 0 0 50%;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 500ms;
+}
+
+.navbar[aria-expanded="true"]{
+    transform: translateX(0%);
+    transition: transform 500ms;
+}
+
+.navigation{
+    flex-direction: column;
+    list-style-type: none;
+    --gap: 1rem;
+    gap: var(--gap);
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding-inline-start: 1em;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--clr-dark-blue);
+    font-weight: var(--fw-normal);
+}
+
+.navigation a:hover{
+    color: var(--clr-hover2);
+}
+
+
+@media (min-width: 35em) {
+    .header .menu{
+        display: none;
+    }
+
+    .navbar{
+        position: static;
+        transform: none;
+    }
+
+    .navigation{
+        flex-direction: row;
+        --gap: 2rem;
+    }
+}
+
