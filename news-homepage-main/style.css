@@ -200,7 +200,7 @@ body{
      color:var(--clr-hover1);
 }
 
-h3:hover{
+.aside .shorts .title:hover{
     color: var(--clr-hover1);
 }
 .aside .shorts{
