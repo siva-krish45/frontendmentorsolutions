@@ -9,9 +9,12 @@ menu.addEventListener("click", ()=>{
     if(expanded === "false"){
         navbar.setAttribute("aria-expanded","true");
         menu.style.background = " url('assets/images/icon-menu-close.svg') no-repeat center center";
+        menu.style.position = "fixed";
+        menu.style.left = "90%";
         overlay.setAttribute("data-overlay", "true");
     }else{
         navbar.setAttribute("aria-expanded","false");
+        menu.style.position= "static";
         menu.style.background = "url('assets/images/icon-menu.svg') no-repeat center center";
         overlay.setAttribute("data-overlay", "false");
         
