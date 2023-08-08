@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Advice  generator app</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <main class="container">
+    <h1 class="title sr-only">Advice generator app</h1>
+    <p class="advice-no">ADVICE # 59</p>
+
+    <div class="advice-container">
+      <q id="advice">
+        Don't be afraid of silly ideas.
+      </q>
+    </div>
+
+    <picture>
+      <source media="(min-width: 50em )" srcset="images/pattern-divider-desktop.svg">
+      <source media="(min-width: 20em )" srcset="images/pattern-divider-mobile.svg">
+      <img src="images/pattern-divider-mobile.svg" alt="" srcset="">
+    </picture>
+
+    <button class="refresh">
+      <img src="images/icon-dice.svg" alt="refresh button to get new advice" srcset="">
+    </button>
+  </main>
+
+</body>
+</html>
